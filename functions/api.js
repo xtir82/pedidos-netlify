@@ -1,7 +1,7 @@
 import express from "express";
 import ServerlessHttp from "serverless-http";
 import handlebars from "express-handlebars";
-import { __dirname } from "./src/utils";
+import { __dirname1 } from "./src/utils";
 
 import Orders from './src/routes/orders.routes'
 
@@ -11,12 +11,12 @@ const app = express();
 //Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname1 + '/public'));
 app.use(morgan("tiny"));
 
 //View Engine
 app.engine("handlebars", handlebars.engine());
-app.set('views', __dirname + '/views');
+app.set('views', __dirname1 + '/views');
 app.set("view engine", "handlebars");
 
 //Routes
