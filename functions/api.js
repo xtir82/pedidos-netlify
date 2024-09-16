@@ -6,7 +6,7 @@ const app = express();
 
 //Routes
 
-app.get(",", (req, res)=>{
+app.get("/", (req, res)=>{
     return res.json({
         messages:"hello world"
     })
