@@ -3,4 +3,4 @@ import { fileURLToPath } from 'node:url';
 
 const __filename1 = fileURLToPath(import.meta.url);
 
-export const __dirname = dirname(__filename1);
+export const __dirname1 = dirname(__filename1);
