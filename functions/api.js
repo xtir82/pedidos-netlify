@@ -3,15 +3,15 @@ import ServerlessHttp from "serverless-http";
 
 const app = express();
 
-//Routes
 
-app.get("/orders", (req, res)=>{
+app.get('/.orders', (req, res) => {
     return res.json({
-        messages:"hello world"
+        messages: "hello world!"
     })
 })
 
-const handler = ServerlessHttp(app)
+
+const handler = ServerlessHttp(app);
 
 module.exports.handler = async(event, context) => {
     const result = await handler(event, context);
