@@ -2,14 +2,14 @@ import express from "express";
 import ServerlessHttp from "serverless-http";
 
 const app = express();
+const router = express.Router();
 
 
-app.get('/orders', (req, res) => {
-    return res.json({
+router.get('/orders', (req, res) => {
+    res.json({
         messages: "hello world!"
-    })
-})
-
+    });
+});
 
 const handler = ServerlessHttp(app);
 
