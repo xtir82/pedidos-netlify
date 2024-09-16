@@ -1,6 +1,5 @@
-import express, { application } from "express";
+import express from "express";
 import ServerlessHttp from "serverless-http";
-
 
 const app = express();
 
@@ -11,7 +10,6 @@ app.get("/orders", (req, res)=>{
         messages:"hello world"
     })
 })
-
 
 const handler = ServerlessHttp(app)
 
