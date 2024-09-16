@@ -1,9 +1,9 @@
 import express from "express";
 import ServerlessHttp from "serverless-http";
 import handlebars from "express-handlebars";
-import { __dirname1 } from "../src/utils";
+import { __dirname } from "./src/utils";
 
-import Orders from '../src/routes/orders.routes'
+import Orders from './src/routes/orders.routes'
 
 const app = express();
 //const router = express.Router();
