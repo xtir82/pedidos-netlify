@@ -11,6 +11,8 @@ router.get('/orders', (req, res) => {
     });
 });
 
+app.use('.netlify/functions/api', router)
+
 const handler = ServerlessHttp(app);
 
 module.exports.handler = async(event, context) => {
